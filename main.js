@@ -40,6 +40,7 @@ adapter.on('unload', function (callback) {
 // is called when databases are connected and adapter received configuration.
 // start here!
 adapter.on('ready', function () {
+	adapter.log.info('Adapter ready ');
    main();
 });
 
@@ -48,7 +49,7 @@ adapter.on('ready', function () {
 function main() {
 	
    // adapter.config
-
+	adapter.log.info('Start main');
    	adapter.log.debug('Eingaben Admin:');
    	adapter.log.debug('Längengrad: ' + adapter.config.longitude);
 	adapter.log.debug('Breitengrad: ' + adapter.config.latitude);
