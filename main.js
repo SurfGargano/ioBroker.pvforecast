@@ -117,6 +117,7 @@ function main() {
 		};
 		
 		thisUrl = var1;
+		adapter.log.info('thisUrl ready '+thisUrl);
 		getPV();
 
 	};	//if else beenden
@@ -161,7 +162,7 @@ async function getPV () {
 
 
 const calc = schedule.scheduleJob('datenübertragen', '0 0 * * *', async function () {
-	//adapter.log.debug('0 0 * * *');
+	adapter.log.info('0 0 * * *');
 	await getPV (); 
 });
 
