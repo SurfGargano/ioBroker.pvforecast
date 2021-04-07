@@ -50,16 +50,16 @@ function main() {
 	
    // adapter.config
 	adapter.log.info('Start main');
-   	adapter.log.debug('Eingaben Admin:');
-   	adapter.log.debug('Längengrad: ' + adapter.config.longitude);
-	adapter.log.debug('Breitengrad: ' + adapter.config.latitude);
-	adapter.log.debug('Neigung: ' + adapter.config.tilt);
-	adapter.log.debug('Azimuth: ' + adapter.config.Azimuth);
-	adapter.log.debug('Plant-performance: ' + adapter.config.Plantp);
-	adapter.log.debug('Link: ' + adapter.config.linkdata);
-    adapter.log.debug('plant name: ' + adapter.config.pvname);
-    adapter.log.debug('Account: ' + adapter.config.account);
-    adapter.log.debug('    ');	
+   	adapter.log.info('Eingaben Admin:');
+   	adapter.log.info('Längengrad: ' + adapter.config.longitude);
+	adapter.log.info('Breitengrad: ' + adapter.config.latitude);
+	adapter.log.info('Neigung: ' + adapter.config.tilt);
+	adapter.log.info('Azimuth: ' + adapter.config.Azimuth);
+	adapter.log.info('Plant-performance: ' + adapter.config.Plantp);
+	adapter.log.info('Link: ' + adapter.config.linkdata);
+    adapter.log.info('plant name: ' + adapter.config.pvname);
+    adapter.log.info('Account: ' + adapter.config.account);
+    adapter.log.info('    ');	
 	
 	//Variablen zur Übergabe und Prüfen der Einträge im Admin
 	var längengrad = adapter.config.longitude;
